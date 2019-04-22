@@ -134,6 +134,8 @@ class ListCommentTableViewController: UITableViewController {
             cell.usernameLabel.text = self.depRate[indexPath.row].user_name
             cell.commentLabel.text = self.depRate[indexPath.row].comment
         
+            cell.cosmosView.rating = Double(self.depRate[indexPath.row].rate ?? 0)  // DenisK for add Stars
+            cell.cosmosView.text = "\(cell.cosmosView.rating)          "            // DenisK for add Stars 
         }
         
         
